@@ -1,2 +1,1 @@
-export * from '@/components/Buttons'
-export { MagePreset } from '@/presets/MagePreset'
+export * from "./components/Buttons/ButtonBase/ButtonBase";

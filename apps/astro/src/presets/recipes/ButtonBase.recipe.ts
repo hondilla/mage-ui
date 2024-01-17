@@ -1,25 +1,25 @@
-import { defineRecipe } from '@pandacss/dev'
+import { defineRecipe } from "@pandacss/dev";
 
 export const ButtonBaseRecipe = defineRecipe({
-  className: 'mage-button',
-  jsx: ['ButtonBase'],
+  className: "mage-button",
+  jsx: ["ButtonBase"],
   base: {
-    color: "white"
+    color: "lightgreen",
   },
   compoundVariants: [
     {
-      variant: 'outlined',
-      color: 'primary',
+      variant: "outlined",
+      color: "primary",
       css: {
-        backgroundColor: 'yellow'
-      }
+        backgroundColor: "yellow",
+      },
     },
     {
-      variant: 'ghost',
-      color: 'primary',
+      variant: "ghost",
+      color: "primary",
       css: {
-        backgroundColor: 'pink'
-      }
+        backgroundColor: "pink",
+      },
     },
   ],
-})
+});
