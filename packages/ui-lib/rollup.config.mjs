@@ -11,7 +11,6 @@ export default {
     'react-dom',
     'react/jsx-runtime',
     '@pandacss/dev',
-    '@mage/ui-lib'
   ],
   output: {
     dir: 'dist',

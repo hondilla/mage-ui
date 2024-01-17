@@ -1,0 +1,66 @@
+{
+  "name": "@mage/ui-lib",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    "./css": {
+      "types": "./dist/css/index.d.ts",
+      "require": "./dist/css/index.mjs",
+      "default": "./dist/css/index.mjs",
+      "node": "./dist/css/index.mjs",
+      "import": "./dist/css/index.mjs"
+    },
+    "./tokens": {
+      "types": "./dist/tokens/index.d.ts",
+      "require": "./dist/tokens/index.mjs",
+      "default": "./dist/tokens/index.mjs",
+      "node": "./dist/tokens/index.mjs",
+      "import": "./dist/tokens/index.mjs"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/types/index.mjs",
+      "default": "./dist/types/index.mjs",
+      "node": "./dist/types/index.mjs",
+      "import": "./dist/types/index.mjs"
+    },
+    "./recipes": {
+      "types": "./dist/recipes/index.d.ts",
+      "require": "./dist/recipes/index.mjs",
+      "default": "./dist/recipes/index.mjs",
+      "node": "./dist/recipes/index.mjs",
+      "import": "./dist/recipes/index.mjs"
+    },
+    "./patterns": {
+      "types": "./dist/patterns/index.d.ts",
+      "require": "./dist/patterns/index.mjs",
+      "default": "./dist/patterns/index.mjs",
+      "node": "./dist/patterns/index.mjs",
+      "import": "./dist/patterns/index.mjs"
+    },
+    "./jsx": {
+      "types": "./dist/jsx/index.d.ts",
+      "require": "./dist/jsx/index.mjs",
+      "default": "./dist/jsx/index.mjs",
+      "node": "./dist/jsx/index.mjs",
+      "import": "./dist/jsx/index.mjs"
+    }
+  },
+  "scripts": {
+    "prepare": "panda codegen",
+    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@mage/preset": "workspace:^",
+    "@pandacss/dev": "^0.27.2",
+    "@types/react": "^18.2.48"
+  }
+}

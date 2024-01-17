@@ -2,10 +2,12 @@ import { definePreset } from "@pandacss/dev";
 
 import { Recipes } from "./recipes";
 
-export const ProjectPreset = definePreset({
+export const MagePreset = definePreset({
   theme: {
     extend: {
       recipes: Recipes,
     },
   },
 });
+
+export default MagePreset;
